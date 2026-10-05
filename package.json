@@ -1,0 +1,8 @@
+{
+  "name": "ihop-dove-springs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A modern, accessible website for IHOP Church Dove Springs in Austin, Texas.",
+  "type": "module",
+  "scripts": { "build": "node scripts/build.mjs" }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ihop-dove-springs.martystowing739.chatgpt.site/sitemap.xml
