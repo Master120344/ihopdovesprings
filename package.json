@@ -4,5 +4,8 @@
   "private": true,
   "description": "A modern, accessible website for IHOP Church Dove Springs in Austin, Texas.",
   "type": "module",
-  "scripts": { "build": "node scripts/build.mjs" }
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:pages": "node scripts/build.mjs && node scripts/export-pages.mjs"
+  }
 }

@@ -42,3 +42,16 @@ Church photographs and branding retain their respective owners’ rights. No lic
 ## Validation
 
 The build and JavaScript syntax checks pass. Slideshow behavior was checked for timing, pause controls, reduced motion, manual navigation, error fallback, pausing while an image loads, hover, and hidden-tab behavior. Local links, cross-page anchors, image alternative text, asset references, page titles, and document landmarks were checked across all pages. Responsive styles cover desktop, tablet, and mobile layouts; reduced-motion preferences are respected. No browser visual QA was run in this environment.
+
+
+## GitHub Pages
+
+The repository now includes the complete public website at its root, including `index.html`, all pages, local fonts, photographs, styling, and slideshow scripts. This supports the existing GitHub Pages deployment from `main` at the repository root. `.nojekyll` keeps the static files intact.
+
+GitHub Pages address: https://master120344.github.io/ihopdovesprings/
+
+The design is the same published Sites version. Its original build and assets remain in `dist/`; the Pages export adds the `/ihopdovesprings` path to local navigation, assets, fonts, slideshow photo records, and the Events redirect. Canonical URLs and the sitemap use the Pages address.
+
+Run `npm run build:pages` with Node.js after editing `src/` or `scripts/build.mjs`, then commit the rebuilt root files with the source. No package installation is required. `npm run build` still builds the original Sites output in `dist/`. Serve the repository root at `/ihopdovesprings/` when previewing the Pages export.
+
+For a custom domain, set `PAGES_BASE_PATH` to an empty string and `PAGES_ORIGIN` to the custom site URL before running `npm run build:pages`.
